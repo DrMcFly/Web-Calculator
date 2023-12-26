@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculator</title>
+
+</head>
+
+<body>
+    <script src = "index.js"></script>
+    <div class = 'calculator'>
+        <div>
+            <input class='input' id='textbox1' readonly="readonly" ></input>
+        </div>
+         
+        <div class="group1">
+            <div>
+                <button class="button" onclick="main(1)">1</button>
+                <button class="button" onclick="main(2)">2</button>
+                <button class="button" onclick="main(3)">3</button>
+                <button class="button" onclick="main(' + ')">+</button>
+            </div>
+
+            <div>
+                <button class="button" onclick="main(4)">4</button>
+                <button class="button" onclick="main(5)">5</button>
+                <button class="button" onclick="main(6)">6</button>
+                <button class="button" onclick="main(' - ')">-</button>
+            </div>
+            
+            <div>
+                <button class="button" onclick="main(7)">7</button>
+                <button class="button" onclick="main(8)">8</button>
+                <button class="button" onclick="main(9)">9</button>
+                <button class="button" onclick="main(' * ')">*</button>
+            </div>
+            
+            <div>
+                <button class="button" onclick="main(0)">0</button>
+                <button class="button" onclick="main(undefined); document.getElementById('textbox1').value = '';">C</button>
+                <button class="button" onclick="main('=')">=</button>
+                <button class="button" onclick="main(' / ')">/</button>
+            </div>
+        </div>
+
+        <h1 id='header1'></h1>
+    </div>
+
+</body>
+
+</html>
